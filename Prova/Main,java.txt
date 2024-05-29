@@ -1,0 +1,53 @@
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Publicacao c1 = new Publicacao() ;
+			
+		c1.settitulo("jornal 7");
+		c1.setautor("Mariana Souza");
+		c1.setanoPublicacao(2017);
+		
+		
+        Livro c2 = new Livro();
+        c2.settitulo("O principe cruel");
+        c2.setautor("holly black");
+        c2.setanoPublicacao(2020);
+        c2.setnumPaginas(233);
+        c2.seteditora("galera");
+
+        System.out.println("Ver editora. S para sim e N para não");
+        resposta = in.next();
+        if(resposta.equalsIgnoreCase("S")){
+            c2.exibirDetalhes
+        }else{
+            c2.exibirDetalhes(false);
+        }
+
+        
+        Revista c3 = new Revista ();
+        c3.settitulo("Como fazer um bolo de morango");
+        c3.setautor("Revista bolos da Ma");
+        c3.setanoPublicacao(2021);
+        c3.setnumEdicao(10);
+        c3.setmesPublicacao("13/08/2021");
+
+        System.out.println("Ver mês de publicação. S para sim e N para não");
+        resposta = in.next();
+        if(resposta.equalsIgnoreCase("S")){
+            c3.exibirDetalhes
+        }else{
+            c3.exibirDetalhes(false);
+        }
+        
+        c1.exibirDetalhes();
+        System.out.println("");
+        c2.exibirDetalhes();
+        System.out.println("");
+        c3.exibirDetalhes();
+        
+	}
+
+}
